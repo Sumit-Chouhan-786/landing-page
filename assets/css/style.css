@@ -171,6 +171,74 @@ textarea{
 }
 
 
+/* faq section css */
+.accordion-button {
+font-family: 'poppins','sans-serif';
+color: #585858;
+  font-weight: bold;
+  background-color: #ecf7eb !important;
+  border-radius: 20px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: none;
+  background-color: transparent !important;
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordion-body {
+  background-color: #ecf7eb;
+  border-radius: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+
+
+/* Remove default Bootstrap icon */
+.accordion-button::after {
+  content: ""; 
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  right: 20px;
+}
+
+/* Change icon to minus when active */
+.accordion-item.active .accordion-button::after {
+  content: "-";
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ecf7eb !important;
+}
+.accordion-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+
 
 
   
