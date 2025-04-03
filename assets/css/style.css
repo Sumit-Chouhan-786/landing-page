@@ -1,5 +1,5 @@
 .service_card{
-    background-image: url("../images/services-card-bg.png");
+    background-image: url("../images/services-card-bg.webp");
     background-repeat: no-repeat;
     background-size: 100%  100%;
     padding: 20px;
@@ -33,7 +33,7 @@
 
   /* footer css start here */
   footer{
-    background-image: url("../images/footer-bg.png");
+    background-image: url("../images/footer-bg.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -44,21 +44,133 @@ margin-bottom: -70px;}
 
 /* form section css */
 
-.map_section{
-    padding: 147px 0;
-}
+
 .form-container {
     background: white;
     padding: 20px;
     border-radius: 10px;
 }
+
+.form-container input{
+  border: 2px solid #9c9c9c;
+  padding: 16px 14px;
+  border-radius: 20px;
+  outline: none !important;
+}
+.form-container textarea{
+  border: 2px solid #9c9c9c;
+  padding: 16px 14px;
+  border-radius: 20px;
+  outline: none !important;
+}
+.form-container button {
+  background: linear-gradient(to bottom, #EF7F1B, #FCC300);
+  border-radius: 394px;
+  color: white;
+  padding: 16px 0;
+}
+.form_section_img{
+  top: 50%;
+  transform: translateY(-50%);
+}
 .map-container {
     background: linear-gradient(to top, #ffe259, #ffa751);
     padding: 20px;
+    height: 701px;
     border-radius: 10px;
     text-align: center;
 }
 textarea{
     resize: none;
 }
+
+.map_section{
+  padding: 147px 0;
+}
+@media (max-width:576px) {
+  .map_section{
+    padding: 60px 0;
+}
+}
+@media (max-width:768px) {
+  .map-container {
+   
+    height: 401px;
+   
+}
+.map-container iframe{
+  height: 280px !important;
+}
+}
+@media (max-width:992px) {
+  .map_section{
+    padding: 80px 0;
+}
+}
+@media (max-width:1200px) {
+  .map_section{
+    padding: 100px 0;
+}
+}
+
+/* Slider container */
+/* .slider-container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+} */
+ .faq_slider_bg{
+  background-image: url('../images/faq-and-slider-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+
+/* Default Card Styling */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+
+/* Image Styling */
+.card .testimonial_image {
+  width: 100%;
+  height: 331px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Center Slide - Bigger Size */
+.slick-center {
+  transform: scale(1.2); /* Increase size */
+  opacity: 1 !important;
+}
+
+/* Side Slides - Smaller Size */
+.slick-slide {
+  transform: scale(0.7); /* Reduce size of side cards */
+  opacity: 0.6;
+}
+
+/* Ensure smooth layout */
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.slick-slide {
+  margin: 0 5px !important; /* Reduce space between slides */
+}
+
+.slick-list {
+  padding: 0 !important; /* Remove extra padding */
+}
+
+
+
+
   
