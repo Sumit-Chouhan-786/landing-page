@@ -1,0 +1,64 @@
+.service_card{
+    background-image: url("../images/services-card-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%  100%;
+    padding: 20px;
+    height: 350px;
+    min-width: 100%;
+}
+
+.services_section div p{
+    max-width: 592px;
+    margin: 0 auto;
+}
+
+.service_card div button {
+    border: 1px solid #EF7F1B;
+    border-radius: 100px; 
+    color: #EF7F1B !important;
+    padding: 10px 20px;
+    background-color: transparent;
+  }
+  
+  .service_card div button:hover {
+    background-color: #FCC300; 
+    color: #fff !important; 
+  }
+
+  .services_bottom_box{
+    max-width: 849px;
+    margin: 0 auto;
+  }
+  
+
+  /* footer css start here */
+  footer{
+    background-image: url("../images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .footer_top_bg{
+width: 100vw;
+margin-bottom: -70px;}
+
+/* form section css */
+
+.map_section{
+    padding: 147px 0;
+}
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.map-container {
+    background: linear-gradient(to top, #ffe259, #ffa751);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+textarea{
+    resize: none;
+}
+  
