@@ -19,6 +19,8 @@
   --color-light-white: #fcfeff;
   --color-primary: #585858;
   --color-orange: #ef7f1b;
+  --color-light-green: #93C137;
+  --accordion-green:#ecf7cb;
   --color-smoky-black: #070707;
 }
 
@@ -47,6 +49,7 @@ body {
 .text_smoky_black {
   color: var(--color-smoky-black);
 }
+
 .orange_gradient {
   background: linear-gradient(186.46deg, #ef7f1b 42.29%, #fcc300 121.19%);
   -webkit-background-clip: text;
@@ -56,7 +59,9 @@ body {
 .bg_light_white {
   background-color: var(--color-light-white);
 }
-
+.bg_light_green{
+  background-color: var(--color-light-green);
+}
 /* Font size utility classes */
 .fs_sm {
   font-size: var(--font-sm);
@@ -88,17 +93,21 @@ body {
 .lh_190 {
   line-height: 190%;
 }
+.lh_150{
+  line-height: 150%;
+}
 /* Media queries for different screen sizes */
 
-/* For screens smaller than 575px */
-@media (max-width: 575px) {
+/* For screens smaller than 992px */
+
+@media (max-width: 992px) {
   :root {
-    --font-sm: 12px;
-    --font-base: 14px;
-    --font-md: 16px;
-    --font-lg: 18px;
-    --font-xl: 30px;
-    --font-2xl: 40px;
+    --font-sm: 14px;
+    --font-base: 16px;
+    --font-md: 18px;
+    --font-lg: 20px;
+    --font-xl: 38px;
+    --font-2xl: 48px;
   }
 }
 
@@ -114,14 +123,15 @@ body {
   }
 }
 
-/* For screens smaller than 992px */
-@media (max-width: 992px) {
+/* For screens smaller than 576px */
+
+@media (max-width: 575px) {
   :root {
-    --font-sm: 14px;
-    --font-base: 16px;
-    --font-md: 18px;
-    --font-lg: 20px;
-    --font-xl: 38px;
-    --font-2xl: 48px;
+    --font-sm: 12px;
+    --font-base: 14px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xl: 30px;
+    --font-2xl: 40px;
   }
 }

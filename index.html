@@ -5,11 +5,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aom</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <!-- Slick CSS -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
   <link rel="stylesheet" href="./assets/css/root.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -17,14 +20,60 @@
 </head>
 
 <body>
+
   <!-- HERO  -->
-  <div class="hero_bg pt-4">
-    <!-- NAV BAR  -->
-    <div class="pt-1">
-      <div class="nav_bar bg_light_white">
-        <img src="./assets/images/LOGO.webp" alt="page-logo" class="page_logo">
+  <div class="hero_bg px-4 position-relative pt-4">
+    <img class="position-absolute left_man_cow" src="./assets/images/Man With Cow .png" alt="man with cow">
+    <img class="position-absolute end-0 right_cow_boy z-1" src="./assets/images/header-right-boy.png"
+      alt="right_cow_boy">
+    <img class="position-absolute d-sm-block d-none mw_200 left_cow z-1" src="./assets/images/header-left-cow.png"
+      alt="left_cow">
+    <img class="position-absolute z-1 mw_200 right_cow" src="./assets/images/header-right-cow.png" alt="right_cow">
+    <nav class="nav_bar navbar-expand-lg bg_light_white position-relative">
+      <div class="container">
+        <!-- Header Row -->
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img class="nav_logo" src="./assets/images/LOGO.webp" alt="page-logo" height="40">
+          </a>
+          <ul class="navbar-nav p-4 d-lg-flex d-none">
+            <li class="nav-item"><a class="nav-link" href="#">होम पेज</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">हमारे बारे में</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">सेवाएँ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">गैलरी</a></li>
+          </ul>
+
+          <!-- Custom Toggle Button (Mobile only) -->
+          <button class="navbar-toggler custom-toggler d-lg-none" type="button">
+            <span class="custom-toggler-icon">☰</span>
+          </button>
+
+          <!-- WhatsApp CTA (Desktop only) -->
+          <a href="#" class="nav_btn d-none d-lg-inline bg_light_green ff_poppins btn_hover ms-3">
+            <img class="nav_btn_img me-2" src="./assets/images/logos_whatsapp-icon.webp" alt="WhatsApp" height="20">
+            व्हाट्सएप्प
+          </a>
+        </div>
       </div>
-    </div>
+
+      <!-- Slide-in Navbar for Mobile -->
+      <div class="mobile-nav d-lg-none" id="mobileNav">
+        <button class="close-btn">&times;</button>
+        <ul class="navbar-nav p-4">
+          <li class="nav-item"><a class="nav-link" href="#">होम पेज</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">हमारे बारे में</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">सेवाएँ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">गैलरी</a></li>
+        </ul>
+        <a href="#" class="mob_nav_btn bg_light_green ff_poppins btn_hover ms-3">
+          <img class="nav_btn_img me-2" src="./assets/images/logos_whatsapp-icon.webp" alt="WhatsApp" height="20">
+          व्हाट्सएप्प
+        </a>
+      </div>
+    </nav>
+
+
     <div class="mx-auto d-flex flex-column align-items-center">
       <h1 class="text-center fw-bold main_heading fs_2xl mb-0">अर्जुन ऑयल मिल गुणवत्तापूर्ण पशु चारा निर्माता</h1>
       <h2 class="text-center pt-2 fw-semibold">स्वस्थ पशु, समृद्ध किसान!</h2>
@@ -36,26 +85,32 @@
       आपके पशुओं को मजबूत और स्वस्थ बनाए रखती है।</p>
   </div>
   <!-- ABOUT US  -->
-  <div class="aboutus_bg">
-    <div class="d-flex justify-content-center align-items-center aboutus_main_parent container">
+  <div class="aboutus_bg position-relative z-0 about_spacing
+  ">
+    <img class="about_bottom_layer position-absolute w-100" src="./assets/images/about-bottom-layer.png"
+      alt="bottom-layer">
+    <img class="position-absolute about_top_layer w-100" src="./assets/images/about-top-layer.webp" alt="">
+    <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center aboutus_main_parent container">
       <div>
-        <h2 class="fw-semibold fs_xl text_primary mb-2">हमारे बारे में</h2>
-        <p class="pt-1 fw-semibold orange_gradient fs_2lg mb-0">40+ वर्षों की विशेषज्ञता के साथ</p>
-        <p class="pt-4 ff_pooins fw-normal lh_190 text_smoky_black mb-0">अर्जुन ऑयल मिल पशु आहार उद्योग में एक भरोसेमंद
+        <h2 class="fw-semibold fs_xl text-lg-start text-center text_primary mb-2">हमारे बारे में</h2>
+        <p class="pt-1 fw-semibold orange_gradient text-lg-start text-center fs_2lg mb-0">40+ वर्षों की विशेषज्ञता के
+          साथ</p>
+        <p class="pt-4 ff_pooins fw-normal lh_190 text-lg-start text-center text_smoky_black mb-0">अर्जुन ऑयल मिल पशु
+          आहार उद्योग में एक भरोसेमंद
           नाम है। हम किसानों और पशुपालकों के लिए उच्च गुणवत्ता वाले पशु
           चारा, तेल
           खली, और पोषक तत्वों से भरपूर आहार प्रदान करते हैं। हमारा उद्देश्य स्वस्थ पशु, अधिक उत्पादन और किसानों की
           समृद्धि
           सुनिश्चित करना है।</p>
-        <p class="pt-3 fs_base fw-semibold lh_190 text_smoky_black mb-0">
+        <p class="pt-3 fs_base text-lg-start text-center fw-semibold lh_190 text_smoky_black mb-0">
           हमारी विशेषताएँ:
         </p>
-        <div class="mt-2 pt-1 d-flex align-items-center">
-          <input type="checkbox" name="" id="">
+        <div class="mt-2 pt-1 mw_lg_280 d-flex align-items-center">
+          <input type="checkbox" class="custom-checkbox" name="" id="">
           <p class="mb-0 ps-1 fs_base fw-normal lh_190 text_smoky_black">शुद्ध और प्राकृतिक उत्पाद.</p>
         </div>
-        <div class="mt-1 d-flex align-items-center">
-          <input type="checkbox" name="" id="">
+        <div class="mt-1 d-flex mw_lg_280 align-items-center">
+          <input type="checkbox" class="custom-checkbox" name="" id="">
           <p class="mb-0 ps-1 fs_base fw-normal lh_190 text_smoky_black">अत्याधुनिक तकनीकों द्वारा निर्मित.</p>
         </div>
       </div>
@@ -63,250 +118,327 @@
     </div>
   </div>
   <!-- services section -->
-  <section class="services_section">
-    <div class="container">
+  <section class="services_section position-relative">
+    <img class="position-absolute bottom-4 start-0 d-sm-block d-none z-0" src="./assets/images/servoce-tree.png" alt="">
+    <div class="custom-container">
       <h2 class="text-center fs_xl fw-semibold mb-2 text_primary">
         हमारी सेवाएँ
       </h2>
-      <p>
-        हम विभिन्न प्रकार के गुणवत्तापूर्ण पशु आहार और कृषि उत्पाद प्रदान करते
-        हैं: दूध, घी की मात्रा बढ़ाने के लिए और भैंस की अच्छी सेहत के लिए
-        अर्जुन ब्रांड का पशु आहार खिलाए ।
+      <p class="text-center ff_pooins fw-normal lh_190 text-center text_smoky_black mb-0">
+        हम विभिन्न प्रकार के गुणवत्तापूर्ण पशु आहार और कृषि उत्पाद प्रदान करते हैं: दूध, घी की मात्रा बढ़ाने के लिए और
+        भैंस की
+        अच्छी सेहत के लिए अर्जुन ब्रांड का पशु आहार खिलाए ।
       </p>
-      <div class="row pt-5 mt-3">
-        <div class="col-lg-3">
+      <div class="row justify-content-center mt_38 position-relative">
+        <div class="col-lg-3 mt-4 col-md-4 col-sm-6">
           <div class="service_card d-flex flex-column align-items-center">
             <img src="./assets/images/card-1.webp" alt="card" />
             <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">डेयरी पशु आहार</h3>
             <div>
-              <button>
+              <button class="openModalBtn">
                 <img src="./assets/images/button-left-cow.webp" alt="left-cow" />अधिक जानें<img
                   src="./assets/images/button-right-cow.webp" alt="left-cow" />
               </button>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 mt-4 col-md-4 col-sm-6">
           <div class="service_card d-flex flex-column align-items-center">
-            <img src="./assets/images/card-1.webp" alt="card" />
-            <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">डेयरी पशु आहार</h3>
+            <img src="./assets/images/card-2.png" alt="card" />
+            <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">बैल और भैंस चारा</h3>
             <div>
-              <button>
+              <button class="openModalBtn">
                 <img src="./assets/images/button-left-cow.webp" alt="left-cow" />अधिक जानें<img
                   src="./assets/images/button-right-cow.webp" alt="left-cow" />
               </button>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 mt-4 col-md-4 col-sm-6">
           <div class="service_card d-flex flex-column align-items-center">
-            <img src="./assets/images/card-1.webp" alt="card" />
-            <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">डेयरी पशु आहार</h3>
+            <img src="./assets/images/card-3.png" alt="card" />
+            <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">तेल खली</h3>
             <div>
-              <button>
+              <button class="openModalBtn">
                 <img src="./assets/images/button-left-cow.webp" alt="left-cow" />अधिक जानें<img
                   src="./assets/images/button-right-cow.webp" alt="left-cow" />
               </button>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 mt-4 col-md-4 col-sm-6">
           <div class="service_card d-flex flex-column align-items-center">
             <img src="./assets/images/card-1.webp" alt="card" />
-            <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">डेयरी पशु आहार</h3>
+            <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">कृषि अवशेष</h3>
             <div>
-              <button>
+              <button class="openModalBtn">
                 <img src="./assets/images/button-left-cow.webp" alt="left-cow" />अधिक जानें<img
                   src="./assets/images/button-right-cow.webp" alt="left-cow" />
               </button>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 mt-4 col-md-4 col-sm-6">
           <div class="service_card d-flex flex-column align-items-center">
-            <img src="./assets/images/card-1.webp" alt="card" />
-            <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">डेयरी पशु आहार</h3>
+            <img src="./assets/images/card-2.png" alt="card" />
+            <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">गुड़ और खली</h3>
             <div>
-              <button>
+              <button class="openModalBtn">
                 <img src="./assets/images/button-left-cow.webp" alt="left-cow" />अधिक जानें<img
                   src="./assets/images/button-right-cow.webp" alt="left-cow" />
               </button>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 mt-4 col-md-4 col-sm-6">
           <div class="service_card d-flex flex-column align-items-center">
             <img src="./assets/images/card-1.webp" alt="card" />
-            <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">डेयरी पशु आहार</h3>
+            <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">दाना पशु आहार</h3>
             <div>
-              <button>
+              <button class="openModalBtn">
                 <img src="./assets/images/button-left-cow.webp" alt="left-cow" />अधिक जानें<img
                   src="./assets/images/button-right-cow.webp" alt="left-cow" />
               </button>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 mt-4 col-md-4 col-sm-6">
           <div class="service_card d-flex flex-column align-items-center">
-            <img src="./assets/images/card-1.webp" alt="card" />
-            <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">डेयरी पशु आहार</h3>
+            <img src="./assets/images/card-3.png" alt="card" />
+            <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">साइलाज</h3>
             <div>
-              <button>
+              <button class="openModalBtn">
                 <img src="./assets/images/button-left-cow.webp" alt="left-cow" />अधिक जानें<img
                   src="./assets/images/button-right-cow.webp" alt="left-cow" />
               </button>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="service_card d-flex flex-column align-items-center">
-            <img src="./assets/images/card-1.webp" alt="card" />
-            <h3 class="ff_poppins fw-semibold fs_lg pb-4 pt-2">डेयरी पशु आहार</h3>
-            <div>
-              <button>
-                <img src="./assets/images/button-left-cow.webp" alt="left-cow" />अधिक जानें<img
-                  src="./assets/images/button-right-cow.webp" alt="left-cow" />
-              </button>
-            </div>
-          </div>
-        </div>
-      
+
+
       </div>
-      
+
     </div>
+
   </section>
+
   <!-- VIDEO SECTION  -->
-  <div class="bg-warning">
-    <div class="pt-4 mt-5 d-flex align-items-center flex-column video_section">
+  <div class="bg_warning position-relative">
+    <img class="position-absolute z-n1 video_top_layer w-100" src="./assets/images/video_top_layer.png"
+      alt="video-top-layer">
+    <div class="pt_72 px-3 d-flex align-items-center flex-column video_section">
       <h2 class="fw-semibold fs_xl text_primary">वीडियो</h2>
       <p class="text-center ff_pooins fw-normal fs_base lh_190 text_smoky_black mb-0 pt-2"> हमारे उन्नत उत्पादन
         प्रक्रिया, उत्पाद गुणवत्ता और ग्राहकों के अनुभवों को वीडियो में देखें।</p>
     </div>
-    <div class="d-flex justify-content-center py-4 mt-1">
-      <video src="./assets/video/sample-video.mp4" class="cow_video"></video>
+    <div class="d-flex px-3 justify-content-center">
+      <div class="video_wrapper z-20 position-relative d-flex justify-content-center py-4 mt-1">
+        <video width="1140px" src="./assets/video/sample-video.mp4" class="cow_video"
+          poster="./assets/images/video-cover.png">
+        </video>
+        <button class="video_play_btn position-absolute">
+          <img class="play_btn" src="./assets/images/play-button.png" alt="play" />
+        </button>
+      </div>
     </div>
+    <!-- keyframe -->
+    <section class="pt-274 position-relative z-20">
+      <img class="position-absolute w-100 marquee-bg z-n1" src="./assets/images/marquee-bg.png" alt="marquee-bg">
+      <div class="d-flex justify-content-lg-between  gap-3 gap-lg-0 align-items-center align-items-lg-start flex-column justify-content-center flex-lg-row mw-1172 mx-auto px-3">
+
+        <div class="d-flex flex-column position-relative z-50">
+          <h2 class="fw-semibold fs_xl text_primary ff_poppins text-center mb-0 text-lg-start">गैलरी</h2>
+          <p class="text-center text-lg-start ff_pooins fw-normal fs_base text-center text-lg-start lh_190 text_smoky_black mb-0 lh_190 pt-2">हमारी
+            फैक्ट्री, उत्पाद और हमारे खुशहाल ग्राहकों की झलक देखें!</p>
+        </div>
+        <button class="gallery_btn d-flex align-items-center bg_orange_gradient justify-content-center">पूरी गैलरी देखें</button>
+      </div>
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="marquee-content">
+            <img src="./assets/images/gallery-1.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-2.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-3.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-4.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-5.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-6.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-3.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-4.png" alt="gallery-img" />
+          </div>
+          <!-- Duplicate content to create a seamless loop -->
+          <div class="marquee-content">
+            <img src="./assets/images/gallery-1.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-2.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-3.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-4.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-5.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-6.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-3.png" alt="gallery-img" />
+            <img src="./assets/images/gallery-4.png" alt="gallery-img" />
+          </div>
+        </div>
+      </div>
+
+
+    </section>
   </div>
   <div class="faq_slider_bg">
+
     <!-- faq section start her -->
     <div class="container accordion-container">
-      <h2 class="text-center mb-5">खरीदारों के लिए सामान्य प्रश्न</h2>
-      <div class="accordion" id="faqAccordion">
-  
+      <h2 class="text-center mb-5 fw-semibold fs_xl text_primary pt-130">खरीदारों के लिए सामान्य प्रश्न</h2>
+      <div class="accordion w-100 mw-1172" id="faqAccordion">
+
         <!-- FAQ Item 1 (Default Open) -->
-        <div class="accordion-item active">  <!-- Now starts as active -->
+        <div class="accordion-item active"> <!-- Now starts as active -->
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
               अर्जुन ब्रांड का बफ एलो फीड कच्ची घानी खल क्या है?
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              अर्जुन ब्रांड का बफ एलो फीड कच्ची घानी खल एक उच्च गुणवत्ता वाला पशु आहार है, जो सरसों की कच्ची घानी पद्धति से निकले हुए खली से तैयार किया जाता है। यह पोषक तत्वों से भरपूर होता है और पशुओं की बेहतर वृद्धि और दूध उत्पादन में सहायक होता है।
+              अर्जुन ब्रांड का बफ एलो फीड कच्ची घानी खल एक उच्च गुणवत्ता वाला पशु आहार है, जो सरसों की कच्ची घानी
+              पद्धति
+              से निकले हुए खली से तैयार किया जाता है। यह पोषक तत्वों से भरपूर होता है और पशुओं की बेहतर वृद्धि और दूध
+              उत्पादन में सहायक होता है।
             </div>
           </div>
         </div>
-  
+
         <!-- FAQ Item 2 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               इस खल को पशुओं के आहार में शामिल करने के क्या फायदे हैं?
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              अर्जुन ब्रांड का बफ एलो फीड कच्ची घानी खल एक उच्च गुणवत्ता वाला पशु आहार है, जो सरसों की कच्ची घानी पद्धति से निकले हुए खली से तैयार किया जाता है। यह पोषक तत्वों से भरपूर होता है और पशुओं की बेहतर वृद्धि और दूध उत्पादन में सहायक होता है।
+              अर्जुन ब्रांड का बफ एलो फीड कच्ची घानी खल एक उच्च गुणवत्ता वाला पशु आहार है, जो सरसों की कच्ची घानी
+              पद्धति
+              से निकले हुए खली से तैयार किया जाता है। यह पोषक तत्वों से भरपूर होता है और पशुओं की बेहतर वृद्धि और दूध
+              उत्पादन में सहायक होता है।
             </div>
           </div>
         </div>
-  
+
         <!-- FAQ Item 3 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               क्या यह खल सभी प्रकार के पशुओं के लिए उपयुक्त है?
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              अर्जुन ब्रांड का बफ एलो फीड कच्ची घानी खल एक उच्च गुणवत्ता वाला पशु आहार है, जो सरसों की कच्ची घानी पद्धति से निकले हुए खली से तैयार किया जाता है। यह पोषक तत्वों से भरपूर होता है और पशुओं की बेहतर वृद्धि और दूध उत्पादन में सहायक होता है।
+              अर्जुन ब्रांड का बफ एलो फीड कच्ची घानी खल एक उच्च गुणवत्ता वाला पशु आहार है, जो सरसों की कच्ची घानी
+              पद्धति
+              से निकले हुए खली से तैयार किया जाता है। यह पोषक तत्वों से भरपूर होता है और पशुओं की बेहतर वृद्धि और दूध
+              उत्पादन में सहायक होता है।
             </div>
           </div>
         </div>
-  
+
         <!-- FAQ Item 4 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
               अर्जुन ब्रांड के गाय, भैंस, फीड कच्ची घानी खल को कैसे स्टोर करें?
             </button>
           </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              अर्जुन ब्रांड का बफ एलो फीड कच्ची घानी खल एक उच्च गुणवत्ता वाला पशु आहार है, जो सरसों की कच्ची घानी पद्धति से निकले हुए खली से तैयार किया जाता है। यह पोषक तत्वों से भरपूर होता है और पशुओं की बेहतर वृद्धि और दूध उत्पादन में सहायक होता है।
+              अर्जुन ब्रांड का बफ एलो फीड कच्ची घानी खल एक उच्च गुणवत्ता वाला पशु आहार है, जो सरसों की कच्ची घानी
+              पद्धति
+              से निकले हुए खली से तैयार किया जाता है। यह पोषक तत्वों से भरपूर होता है और पशुओं की बेहतर वृद्धि और दूध
+              उत्पादन में सहायक होता है।
             </div>
           </div>
         </div>
-  
+
       </div>
     </div>
     <!-- center mod slider -->
+      <h2 class="fw-semibold fs_xl text_primary text-center mt-136 px-3">अर्जुन ब्रांड पर खरीदारों के प्रशंसापत्र</h2>
     <div class="slider-container">
       <div class="slider">
-          <div class="card">
-              <img class="testimonial_image" src="./assets/images/testimonial-1.png" alt="slider">
-             <div class="d-flex pt-3 mt-1 justify-content-between align-items-center">
-              <p>महेन्दर चौटाला</p>
-              <div><img height="20" width="111" src="./assets/images/start-group.png" alt="start group"></div>
-             </div>
-             <p class="text-start">"मैं पिछले 2 साल से अर्जुन ब्रांड की कच्ची घानी खल इस्तेमाल कर रहा हूं। दूधारू पशुओं के लिए यह खल बहुत बढ़िया है। हमारे भैंसों का दूध बढ़ गया है और उनकी सेहत भी शानदार बनी हुई है।"</p>
+        <div class="card">
+          <img class="testimonial_image" src="./assets/images/testimonial-1.png" alt="slider">
+          <div class="d-flex pt-3 mt-1 justify-content-between align-items-center">
+            <p>महेन्दर चौटाला</p>
+            <div><img height="20" width="111" src="./assets/images/start-group.png" alt="start group"></div>
           </div>
-          <div class="card">
-              <img class="testimonial_image" src="./assets/images/testimonial-2.png" alt="Image 2">
-              <div class="d-flex pt-3 mt-1 justify-content-between align-items-center">
-                <p>महेन्दर चौटाला</p>
-                <div><img height="20" width="111" src="./assets/images/start-group.png" alt="start group"></div>
-               </div>
-               <p class="text-start">"मैं पिछले 2 साल से अर्जुन ब्रांड की कच्ची घानी खल इस्तेमाल कर रहा हूं। दूधारू पशुओं के लिए यह खल बहुत बढ़िया है। हमारे भैंसों का दूध बढ़ गया है और उनकी सेहत भी शानदार बनी हुई है।"</p>
+          <p class="text-start">"मैं पिछले 2 साल से अर्जुन ब्रांड की कच्ची घानी खल इस्तेमाल कर रहा हूं। दूधारू पशुओं
+            के
+            लिए यह खल बहुत बढ़िया है। हमारे भैंसों का दूध बढ़ गया है और उनकी सेहत भी शानदार बनी हुई है।"</p>
+        </div>
+        <div class="card">
+          <img class="testimonial_image" src="./assets/images/testimonial-2.png" alt="Image 2">
+          <div class="d-flex pt-3 mt-1 justify-content-between align-items-center">
+            <p>महेन्दर चौटाला</p>
+            <div><img height="20" width="111" src="./assets/images/start-group.png" alt="start group"></div>
           </div>
-          <div class="card">
-              <img class="testimonial_image" src="./assets/images/testimonial-3.png" alt="Image 3">
-              <div class="d-flex pt-3 mt-1 justify-content-between align-items-center">
-                <p>महेन्दर चौटाला</p>
-                <div><img height="20" width="111" src="./assets/images/start-group.png" alt="start group"></div>
-               </div>
-               <p class="text-start">"मैं पिछले 2 साल से अर्जुन ब्रांड की कच्ची घानी खल इस्तेमाल कर रहा हूं। दूधारू पशुओं के लिए यह खल बहुत बढ़िया है। हमारे भैंसों का दूध बढ़ गया है और उनकी सेहत भी शानदार बनी हुई है।"</p>
+          <p class="text-start">"मैं पिछले 2 साल से अर्जुन ब्रांड की कच्ची घानी खल इस्तेमाल कर रहा हूं। दूधारू पशुओं
+            के
+            लिए यह खल बहुत बढ़िया है। हमारे भैंसों का दूध बढ़ गया है और उनकी सेहत भी शानदार बनी हुई है।"</p>
+        </div>
+        <div class="card">
+          <img class="testimonial_image" src="./assets/images/testimonial-3.png" alt="Image 3">
+          <div class="d-flex pt-3 mt-1 justify-content-between align-items-center">
+            <p>महेन्दर चौटाला</p>
+            <div><img height="20" width="111" src="./assets/images/start-group.png" alt="start group"></div>
           </div>
-          <div class="card">
-              <img class="testimonial_image" src="./assets/images/testimonial-1.png" alt="Image 4">
-              <div class="d-flex pt-3 mt-1 justify-content-between align-items-center">
-                <p>महेन्दर चौटाला</p>
-                <div><img height="20" width="111" src="./assets/images/start-group.png" alt="start group"></div>
-               </div>
-               <p class="text-start">"मैं पिछले 2 साल से अर्जुन ब्रांड की कच्ची घानी खल इस्तेमाल कर रहा हूं। दूधारू पशुओं के लिए यह खल बहुत बढ़िया है। हमारे भैंसों का दूध बढ़ गया है और उनकी सेहत भी शानदार बनी हुई है।"</p>
+          <p class="text-start">"मैं पिछले 2 साल से अर्जुन ब्रांड की कच्ची घानी खल इस्तेमाल कर रहा हूं। दूधारू पशुओं
+            के
+            लिए यह खल बहुत बढ़िया है। हमारे भैंसों का दूध बढ़ गया है और उनकी सेहत भी शानदार बनी हुई है।"</p>
+        </div>
+        <div class="card">
+          <img class="testimonial_image" src="./assets/images/testimonial-1.png" alt="Image 4">
+          <div class="d-flex pt-3 mt-1 justify-content-between align-items-center">
+            <p>महेन्दर चौटाला</p>
+            <div><img height="20" width="111" src="./assets/images/start-group.png" alt="start group"></div>
           </div>
-          <div class="card">
-              <img class="testimonial_image" src="./assets/images/testimonial-1.png" alt="Image 4">
-              <div class="d-flex pt-3 mt-1 justify-content-between align-items-center">
-                <p>महेन्दर चौटाला</p>
-                <div><img height="20" width="111" src="./assets/images/start-group.png" alt="start group"></div>
-               </div>
-               <p class="text-start">"मैं पिछले 2 साल से अर्जुन ब्रांड की कच्ची घानी खल इस्तेमाल कर रहा हूं। दूधारू पशुओं के लिए यह खल बहुत बढ़िया है। हमारे भैंसों का दूध बढ़ गया है और उनकी सेहत भी शानदार बनी हुई है।"</p>
+          <p class="text-start">"मैं पिछले 2 साल से अर्जुन ब्रांड की कच्ची घानी खल इस्तेमाल कर रहा हूं। दूधारू पशुओं
+            के
+            लिए यह खल बहुत बढ़िया है। हमारे भैंसों का दूध बढ़ गया है और उनकी सेहत भी शानदार बनी हुई है।"</p>
+        </div>
+        <div class="card">
+          <img class="testimonial_image" src="./assets/images/testimonial-1.png" alt="Image 4">
+          <div class="d-flex pt-3 mt-1 justify-content-between align-items-center">
+            <p>महेन्दर चौटाला</p>
+            <div><img height="20" width="111" src="./assets/images/start-group.png" alt="start group"></div>
           </div>
-          <div class="card">
-              <img class="testimonial_image" src="./assets/images/testimonial-1.png" alt="Image 4">
-              <div class="d-flex pt-3 mt-1 justify-content-between align-items-center">
-                <p>महेन्दर चौटाला</p>
-                <div><img height="20" width="111" src="./assets/images/start-group.png" alt="start group"></div>
-               </div>
-               <p class="text-start">"मैं पिछले 2 साल से अर्जुन ब्रांड की कच्ची घानी खल इस्तेमाल कर रहा हूं। दूधारू पशुओं के लिए यह खल बहुत बढ़िया है। हमारे भैंसों का दूध बढ़ गया है और उनकी सेहत भी शानदार बनी हुई है।"</p>
+          <p class="text-start">"मैं पिछले 2 साल से अर्जुन ब्रांड की कच्ची घानी खल इस्तेमाल कर रहा हूं। दूधारू पशुओं
+            के
+            लिए यह खल बहुत बढ़िया है। हमारे भैंसों का दूध बढ़ गया है और उनकी सेहत भी शानदार बनी हुई है।"</p>
+        </div>
+        <div class="card">
+          <img class="testimonial_image" src="./assets/images/testimonial-1.png" alt="Image 4">
+          <div class="d-flex pt-3 mt-1 justify-content-between align-items-center">
+            <p>महेन्दर चौटाला</p>
+            <div><img height="20" width="111" src="./assets/images/start-group.png" alt="start group"></div>
           </div>
+          <p class="text-start">"मैं पिछले 2 साल से अर्जुन ब्रांड की कच्ची घानी खल इस्तेमाल कर रहा हूं। दूधारू पशुओं
+            के
+            लिए यह खल बहुत बढ़िया है। हमारे भैंसों का दूध बढ़ गया है और उनकी सेहत भी शानदार बनी हुई है।"</p>
+        </div>
       </div>
     </div>
   </div>
+
   <!-- map section start here -->
   <section class="map_section position-relative">
-    <img class="position-absolute start-0 form_section_img" src="./assets/images/form-right-image.webp" alt="form image">
+    <img class="position-absolute start-0 form_section_img" src="./assets/images/form-right-image.webp"
+      alt="form image">
     <div class="container">
       <div class="row g-4">
         <div class="col-md-6">
@@ -336,13 +468,14 @@
         </div>
         <div class="col-md-6">
           <div class="map-container">
-            
+
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83917057575!2d77.06889915663934!3d28.527554500550104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1dbbb4e4fddd%3A0x6f2d08b60c1c5b0!2sDelhi!5e0!3m2!1sen!2sin!4v1645698176789!5m2!1sen!2sin"
               width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <p class="mt-3"><span><img src="./assets/images/location-icon.webp" alt="location"></span>पता हैफेड गोदाम के पास, बी डी ओ ब्लॉक के पीछे, जिन्द चुंगी, हाँसी (हरियाणा) - 125033.
+            <p class="mt-3"><span><img src="./assets/images/location-icon.webp" alt="location"></span>पता हैफेड गोदाम के
+              पास, बी डी ओ ब्लॉक के पीछे, जिन्द चुंगी, हाँसी (हरियाणा) - 125033.
               सम्पर्क सूत्र नं:- 9255146546, 9034449844</p>
-            
+
           </div>
         </div>
       </div>
@@ -385,20 +518,42 @@
       </div>
     </footer>
   </div>
+  <div id="serviceModal" class="service_modal d-none fs_24 w-100 position-fixed d-flex flex-column">
+    <div class="d-flex align-items-center justify-content-between">
+      <p class="lh_190 ff_poppins mb-0 fw-semibold text_smoky_black fs_24">डेयरी पशु आहार</p>
+      <button class="modal_cross"><img class="mw_40 modal_cross" src="./assets/images/modal-cross.png"
+          alt="modal-cross"></button>
+    </div>
+    <div class="d-flex mt-3 align-items-center gap_28">
+      <img src="./assets/images/popup-img- (1).png" alt="popup-img-1">
+      <img src="./assets/images/popup-img-(2).png" alt="popup-img-2">
+      <img src="./assets/images/popup-img- (3).png" alt="popup-img-3">
+    </div>
+    <p class="pt-4 mt-1 ff_poppins fs_base lh_150 text_smoky_black opacity-50">अर्जुन ब्रांड की कच्ची घानी खल प्राकृतिक
+      तेलयुक्त
+      खल है, जो पशुओं के स्वास्थ्य और दुग्ध उत्पादन को बढ़ाने में सहायक होती
+      है। यह खल प्रोटीन, फाइबर और आवश्यक पोषक तत्वों से भरपूर होती है, जिससे पशुओं की पाचन शक्ति और ऊर्जा स्तर में
+      वृद्धि होती
+      है। अर्जुन ब्रांड की खल पूरी तरह से शुद्ध और प्राकृतिक होती है, बिना किसी हानिकारक केमिकल या मिलावट के, जिससे यह
+      पशुओं
+      के लिए पूरी तरह सुरक्षित है।</p>
+  </div>
+
   <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Slick JS -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick JS -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-    <script>
-   $(document).ready(function(){
-    $('.slider').slick({
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
         centerMode: true,
         centerPadding: '0px',
-        slidesToShow: 5, 
+        slidesToShow: 5,
         infinite: true,
         dots: false,
         arrows: false,
@@ -406,24 +561,92 @@
         autoplaySpeed: 2000,
         speed: 500,
         responsive: [
-            {
-                breakpoint: 1300,
-                settings: {
-                    slidesToShow: 3, 
-                }
-            },
-            {
-                breakpoint: 900,
-                settings: {
-                    slidesToShow: 1, 
-                }
+          {
+            breakpoint: 1300,
+            settings: {
+              slidesToShow: 3,
             }
+          },
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
         ]
+      });
     });
-});
 
 
-    </script>
+  </script>
+  <script>
+    // -------------- navbar -----------------
+    const toggler = document.querySelector('.custom-toggler');
+    const mobileNav = document.getElementById('mobileNav');
+    const closeBtn = document.querySelector('.close-btn');
+
+    toggler.addEventListener('click', () => {
+      mobileNav.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      mobileNav.classList.remove('active');
+    });
+
+  </script>
+  <!-- // ------------ modal function -------------------- -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const modal = document.getElementById('serviceModal');
+      const openButtons = document.querySelectorAll('.openModalBtn');
+      const popupCloseBtn = document.querySelector('button.modal_cross');
+
+      // Open modal
+      openButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          modal.classList.remove('d-none');
+          modal.style.display = 'flex';
+        });
+      });
+
+      // Close modal
+      popupCloseBtn.addEventListener('click', () => {
+        modal.classList.add('d-none');
+        modal.style.display = 'none';
+      });
+
+      // Close when clicking outside the modal
+      window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('d-none');
+          modal.style.display = 'none';
+        }
+      });
+    });
+  </script>
+  <!-- ------------ video ------------ -->
+  <script>
+    const video = document.querySelector('.cow_video');
+    const playBtn = document.querySelector('.video_play_btn');
+
+    // Play on button click
+    playBtn.addEventListener('click', () => {
+      video.play();
+      playBtn.style.display = 'none';
+    });
+
+    // Toggle play/pause on video click
+    video.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+        playBtn.style.display = 'none';
+      } else {
+        video.pause();
+        playBtn.style.display = 'block';
+      }
+    });
+  </script>
+
 </body>
 
 </html>
